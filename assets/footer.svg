@@ -1,0 +1,62 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nodeFill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a5f3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </radialGradient>
+    <filter id="fGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="360" fill="#06070a"/>
+
+  <!-- positions: Python(150,100) FastAPI(150,260) LLMs(500,60) Docker(500,300) Next.js(500,180) AWS(850,100) PostgreSQL(850,260) -->
+  <g stroke="url(#edgeGrad)" stroke-width="1.3" fill="none">
+    <line x1="150" y1="100" x2="500" y2="180"/>
+    <line x1="150" y1="260" x2="500" y2="180"/>
+    <line x1="500" y1="60" x2="500" y2="180"/>
+    <line x1="500" y1="300" x2="500" y2="180"/>
+    <line x1="500" y1="180" x2="850" y2="100"/>
+    <line x1="500" y1="180" x2="850" y2="260"/>
+    <line x1="150" y1="100" x2="500" y2="60"/>
+    <line x1="150" y1="260" x2="500" y2="300"/>
+    <line x1="500" y1="60" x2="850" y2="100"/>
+    <line x1="500" y1="300" x2="850" y2="260"/>
+  </g>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">
+    <g>
+      <circle cx="150" cy="100" r="10" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="10;13;10" dur="4s" repeatCount="indefinite"/></circle>
+      <text x="150" y="128">Python</text>
+    </g>
+    <g>
+      <circle cx="150" cy="260" r="10" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="10;13;10" dur="4.4s" repeatCount="indefinite"/></circle>
+      <text x="150" y="288">FastAPI</text>
+    </g>
+    <g>
+      <circle cx="500" cy="60" r="12" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="12;16;12" dur="3.6s" repeatCount="indefinite"/></circle>
+      <text x="500" y="40">LLMs</text>
+    </g>
+    <g>
+      <circle cx="500" cy="180" r="13" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="13;17;13" dur="3.2s" repeatCount="indefinite"/></circle>
+      <text x="500" y="212">Next.js</text>
+    </g>
+    <g>
+      <circle cx="500" cy="300" r="10" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="10;13;10" dur="4.2s" repeatCount="indefinite"/></circle>
+      <text x="500" y="328">Docker</text>
+    </g>
+    <g>
+      <circle cx="850" cy="100" r="10" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="10;13;10" dur="3.8s" repeatCount="indefinite"/></circle>
+      <text x="850" y="128">AWS</text>
+    </g>
+    <g>
+      <circle cx="850" cy="260" r="10" fill="url(#nodeFill)" filter="url(#fGlow)"><animate attributeName="r" values="10;13;10" dur="4.6s" repeatCount="indefinite"/></circle>
+      <text x="850" y="288">PostgreSQL</text>
+    </g>
+  </g>
+</svg>
