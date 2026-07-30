@@ -1,0 +1,101 @@
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glowBar" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="620" fill="#06070a"/>
+  <text x="30" y="40" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e5e7eb">Languages &amp; Core Stack</text>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="13" fill="#9ca3af">
+    <!-- Row template: label + track + animated bar -->
+    <!-- Python -->
+    <text x="30" y="80">Python</text>
+    <rect x="30" y="88" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="88" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;460;460" keyTimes="0;0.3;1" dur="3s" fill="freeze"/>
+    </rect>
+
+    <!-- C++ -->
+    <text x="30" y="120">C++</text>
+    <rect x="30" y="128" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="128" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;400;400" keyTimes="0;0.3;1" dur="3.2s" fill="freeze"/>
+    </rect>
+
+    <!-- JavaScript -->
+    <text x="30" y="160">JavaScript</text>
+    <rect x="30" y="168" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="168" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;420;420" keyTimes="0;0.3;1" dur="3.4s" fill="freeze"/>
+    </rect>
+
+    <!-- SQL -->
+    <text x="30" y="200">SQL</text>
+    <rect x="30" y="208" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="208" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;440;440" keyTimes="0;0.3;1" dur="3.1s" fill="freeze"/>
+    </rect>
+
+    <!-- Bash -->
+    <text x="30" y="240">Bash</text>
+    <rect x="30" y="248" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="248" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;360;360" keyTimes="0;0.3;1" dur="3.3s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <text x="30" y="300" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#e5e7eb">AI &amp; Backend Engineering</text>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="13" fill="#9ca3af">
+    <text x="30" y="340">LLMs / RAG / AI Agents</text>
+    <rect x="30" y="348" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="348" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;450;450" keyTimes="0;0.3;1" dur="3.5s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="380">LangChain / Prompt Engineering</text>
+    <rect x="30" y="388" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="388" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;420;420" keyTimes="0;0.3;1" dur="3.2s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="420">FastAPI / Node.js / Express.js</text>
+    <rect x="30" y="428" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="428" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;470;470" keyTimes="0;0.3;1" dur="3.4s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="460">React / Next.js</text>
+    <rect x="30" y="468" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="468" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;430;430" keyTimes="0;0.3;1" dur="3.6s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="500">Databases (PostgreSQL / MongoDB / Redis)</text>
+    <rect x="30" y="508" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="508" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;410;410" keyTimes="0;0.3;1" dur="3.1s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="540">Docker / AWS / CI-CD / Nginx</text>
+    <rect x="30" y="548" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="548" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;400;400" keyTimes="0;0.3;1" dur="3.3s" fill="freeze"/>
+    </rect>
+
+    <text x="30" y="580">System Design / DSA / OOP</text>
+    <rect x="30" y="588" width="500" height="8" rx="4" fill="#161b22"/>
+    <rect x="30" y="588" height="8" rx="4" fill="url(#barGrad)" filter="url(#glowBar)">
+      <animate attributeName="width" values="0;440;440" keyTimes="0;0.3;1" dur="3.5s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>
