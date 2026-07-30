@@ -4,7 +4,7 @@
 
 **Software Engineer · AI Engineer · Full Stack Developer**
 
-B.E. in Computer Engineering (CGPA: 9.19)
+B.E. in Computer Engineering (CGPA: 9.20)
 
 </div>
 
