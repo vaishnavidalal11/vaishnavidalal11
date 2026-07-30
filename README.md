@@ -1,6 +1,37 @@
 <svg width="460" height="60" viewBox="0 0 460 60" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code', 'Courier New', monospace">
   <style>
-    .line { font-size: 18px; fill: #38BDF8; }
+    .line { font-size: 18px; fill: #38BDF8; }<div align="center">
+
+# Vaishnavi Dalal
+
+**Software Engineer · AI Engineer · Full Stack Developer**
+
+B.E. in Computer Engineering (CGPA: 9.19)
+
+</div>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### Skills
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=py,cpp,js,bash,react,nextjs,nodejs,fastapi,postgres,mongodb,mysql,redis,sqlite,docker,linux,aws,git,githubactions,jenkins,nginx&perline=5" alt="Skills" />
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=440&lines=Building+AI-powered+applications;LLMs+%7C+RAG+%7C+AI+Agents;FastAPI+%7C+Next.js+%7C+Docker;Software+Engineer+%7C+AI+Engineer" alt="Typing SVG" />
+</p>
+
+</td>
+</tr>
+</table>
     .cursor { fill: #38BDF8; }
   </style>
 
