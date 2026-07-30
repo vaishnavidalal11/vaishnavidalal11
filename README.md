@@ -96,28 +96,6 @@ An AI-assisted workflow automation system for orchestrating multi-step tasks and
 - Distributed Systems
 - Cloud-Native AI
 
-<br/>
-
-## GitHub Statistics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=vaishnavidalal&show_icons=true&theme=default&hide_border=true" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaishnavidalal&layout=compact&theme=default&hide_border=true" width="48%" alt="Top Languages" />
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=vaishnavidalal&theme=default&hide_border=true" width="60%" alt="GitHub Streak" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=vaishnavidalal&theme=minimal&hide_border=true" width="90%" alt="Contribution Graph" />
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=vaishnavidalal&theme=flat&no-frame=true&column=7&margin-w=8&margin-h=8" width="90%" alt="GitHub Trophies" />
-
-</div>
 
 <br/>
 
