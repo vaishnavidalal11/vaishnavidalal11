@@ -1,0 +1,94 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060a"/>
+      <stop offset="50%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color" values="#7dd3fc;#a78bfa;#67e8f9;#7dd3fc" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#c4b5fd">
+        <animate attributeName="stop-color" values="#c4b5fd;#67e8f9;#a78bfa;#c4b5fd" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#e0f2fe">
+        <animate attributeName="stop-color" values="#e0f2fe;#c4b5fd;#e0f2fe;#e0f2fe" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <linearGradient id="cardStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bgGrad)"/>
+
+  <!-- ambient glow orbs -->
+  <circle cx="180" cy="80" r="160" fill="url(#glow1)">
+    <animate attributeName="cx" values="180;220;180" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="260" r="200" fill="url(#glow2)">
+    <animate attributeName="cy" values="260;220;260" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- floating particles -->
+  <g fill="#93c5fd" filter="url(#softBlur)">
+    <circle cx="90" cy="60" r="2.2"><animate attributeName="cy" values="60;40;60" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.2;0.9" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="250" r="1.8"><animate attributeName="cy" values="250;270;250" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.3;0.8" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="50" r="2"><animate attributeName="cy" values="50;30;50" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.2;0.9" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="180" r="2.4"><animate attributeName="cx" values="1120;1100;1120" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0.2;0.7" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="40" cy="200" r="1.6"><animate attributeName="cy" values="200;180;200" dur="6.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0.15;0.6" dur="6.5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="30" r="1.8"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="290" r="2"><animate attributeName="opacity" values="0.8;0.25;0.8" dur="5.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- floating node lines -->
+  <g stroke="#60a5fa" stroke-opacity="0.25" stroke-width="1">
+    <line x1="100" y1="60" x2="260" y2="250"><animate attributeName="stroke-opacity" values="0.25;0.05;0.25" dur="7s" repeatCount="indefinite"/></line>
+    <line x1="980" y1="50" x2="1120" y2="180"><animate attributeName="stroke-opacity" values="0.2;0.05;0.2" dur="8s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- glass card -->
+  <rect x="60" y="70" width="1080" height="180" rx="22" fill="#ffffff" fill-opacity="0.03" stroke="url(#cardStroke)" stroke-width="1.2"/>
+  <rect x="60" y="70" width="1080" height="180" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- name -->
+  <text x="100" y="150" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)" letter-spacing="2">
+    VAISHNAVI DALAL
+  </text>
+
+  <!-- role rotator -->
+  <text x="102" y="190" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#9ca3af" letter-spacing="3">
+    <tspan>SOFTWARE ENGINEER</tspan>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <text x="102" y="190" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#67e8f9" letter-spacing="3" opacity="0">
+    <tspan>AI ENGINEER</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <text x="102" y="190" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#c4b5fd" letter-spacing="3" opacity="0">
+    <tspan>FULL STACK DEVELOPER</tspan>
+    <animate attributeName="opacity" values="0;0;0;0;1;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- underline accent -->
+  <rect x="102" y="205" width="220" height="2" fill="url(#textGrad)">
+    <animate attributeName="width" values="0;220;220;0" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- status dot -->
+  <circle cx="1090" cy="100" r="5" fill="#34d399">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1102" y="105" font-family="'Segoe UI', monospace" font-size="12" fill="#6b7280" letter-spacing="1">ONLINE</text>
+</svg>
